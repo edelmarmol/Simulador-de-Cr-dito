@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js"></script>
     <title>Simulador de Crédito</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     
-    <h1>¡Tu crédito personal al instante!</h1>
-    <form action="#"> 
+    <h1 class="titulo">¡Tu crédito personal al instante!</h1>
+    <form action="#" class="formulario"> 
         <label>Nombre y Apellido</label>
-        <input type="text">
-        <label>D.N.I</label>
-        <input type="number">
+        <input type="text" class="nombre">
+        <label>Ingresos</label>
+        <input type="number" class="ingresos">
         <label>Monto del Crédito</label>
-        <input type="number">
+        <input type="number" class="monto">
         <label>Forma de pago</label>
-        <input type="text">
+        <input type="text" class="pago">
         <label>Plazo</label>
-        <input type="number">
+        <input type="number" class="plazo">
         <label>Interés</label>
-        <button>CALCULAR</button>
+        <button id="boton">CALCULAR</button>
     </form>
 
 </body>

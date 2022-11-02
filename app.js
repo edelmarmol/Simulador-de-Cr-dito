@@ -1,25 +1,24 @@
-iniciarApp();
-function iniciarApp(){
-    pedirDatos();
-}
+const titulo = document.querySelector(".titulo");
+const formulario = document.querySelector(".formulario");
+const ingresos = document.querySelector(".ingresos");
+const montodelCredito = document.querySelector(".montodelCredito");
+const formadePago = document.querySelector(".formadePago");
+const plazo = document.querySelector(".plazo");
+const interes = document.querySelector(".interes");
+const boton = document.querySelector("#boton");
 
-function pedirDatos(nombre, dni, edad, ingresos, monto) {
-    nombre = prompt("ingrese su nombre");
-    dni = prompt("ingrese su dni");
-    edad = prompt("ingrese su edad");
-    ingresos = prompt("ingrese sus ingresos");
-    monto = prompt("monto deseado");
-    let interes = 1.68; 
-    let total = monto * interes;
+boton.addEventListener("click", pedirDatos())
 
-    if(ingresos > 100000){
-        alert(`${nombre}
-        DNI: ${dni}
-        Crédito Asignado: ${total}`)
-    } else {
-        alert("Crédito no asignado")
+function pedirDatos() {
+    if(ingresos>= 120000){
+        const aprobado = document.createElement("p")
+        aprobado.textContent = "¡Su crédito fue APROBADO!"
+        boton.appendChild(aprobado)
     }
 }
+
+
+
 
 
 
